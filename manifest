@@ -177,10 +177,8 @@ export PACKAGES="\
 # Which is often the same as the package name but it can be different.
 # Check on the AUR webpage if you are unsure
 export AUR_PACKAGES="\
-	asusctl \
 	ayaneo-platform-dkms-git \
 	ayn-platform-dkms-git \
-	bcm20702a1-firmware \
 	boxtron \
 	chimera \
 	chimeraos-device-quirks-git \
@@ -192,14 +190,7 @@ export AUR_PACKAGES="\
 	hhfc-git \
 	hid-msi-claw-dkms-git \
 	legendary \
-	libretro-dosbox-pure-git \
-	libretro-lrps2-git \
-	libretro-opera-git \
-	libretro-prosystem-git \
-	libretro-stella2014-git \
-	libretro-virtualjaguar-git \
 	linux-firmware-valve \
-	kanit-font \
 	nintendo-udev \
 	pikaur \
 	powerstation-bin \
@@ -209,7 +200,6 @@ export AUR_PACKAGES="\
 	rtl8814au-dkms-git \
 	rtl8821au-dkms-git \
 	ryzenadj-git \
-	steam_notif_daemon \
 	steam-powerbuttond-git \
 	steam-removable-media-git \
 	wyvern \

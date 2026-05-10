@@ -65,7 +65,7 @@ mkdir ${BUILD_PATH}/aur_pkgs
 mkdir ${BUILD_PATH}/override_pkgs
 
 cp -rv aur-pkgs/*.pkg.tar* ${BUILD_PATH}/aur_pkgs
-cp -rv pkgs/*.pkg.tar* ${BUILD_PATH}/local_pkgs
+cp -rv pkgs/*.pkg.tar* ${BUILD_PATH}/local_pkgs 2>/dev/null || true
 
 if [ -n "${PACKAGE_OVERRIDES}" ]; then
 	wget --directory-prefix=${BUILD_PATH}/override_pkgs ${PACKAGE_OVERRIDES}
@@ -107,7 +107,7 @@ else
 fi
 
 # install local packages
-pacman --noconfirm -U --overwrite '*' /local_pkgs/*
+ls /local_pkgs/*.pkg.tar* 2>/dev/null && pacman --noconfirm -U --overwrite '*' /local_pkgs/* || true
 rm -rf /var/cache/pacman/pkg
 
 # remove jack2 to prevent conflict with pipewire-jack

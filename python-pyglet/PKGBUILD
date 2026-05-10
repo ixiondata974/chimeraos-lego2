@@ -1,0 +1,15 @@
+pkgname=python-pyglet
+pkgver=2.1.13
+pkgrel=2
+pkgdesc='A cross-platform windowing and multimedia library for Python'
+arch=(any)
+url='https://pyglet.org'
+license=(BSD)
+depends=(python)
+makedepends=(python-installer)
+source=("https://files.pythonhosted.org/packages/py3/p/pyglet/pyglet-${pkgver}-py3-none-any.whl")
+sha256sums=(SKIP)
+
+package() {
+  python -m installer --destdir="${pkgdir}" pyglet-${pkgver}-py3-none-any.whl
+}

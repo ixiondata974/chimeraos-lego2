@@ -1,0 +1,52 @@
+Cloning into '/tmp/chimera-build'...
+==> Making package: chimera 0.24.10-1 (Sun May 10 14:57:18 2026)
+==> Checking runtime dependencies...
+==> Installing missing dependencies...
+error: target not found: python-inotify-simple
+error: target not found: python-pyglet
+error: target not found: python-gbopyrator
+error: target not found: legendary
+==> ERROR: 'pacman' failed to install missing dependencies.
+==> Missing dependencies:
+  -> python-bottle
+  -> python-pyftpdlib
+  -> python-yaml
+  -> python-vdf
+  -> python-inotify-simple
+  -> python-requests
+  -> python-beaker
+  -> python-pyglet
+  -> python-bcrypt
+  -> python-psutil
+  -> python-pyudev
+  -> python-plyvel
+  -> python-waitress
+  -> python-gbopyrator
+  -> retroarch
+  -> libretro-genesis-plus-gx
+  -> libretro-mgba
+  -> libretro-nestopia
+  -> libretro-snes9x
+  -> libretro-mupen64plus-next
+  -> libretro-beetle-pce-fast
+  -> libretro-flycast
+  -> libretro-beetle-psx-hw
+  -> libretro-kronos
+  -> libretro-mame
+  -> libretro-dolphin
+  -> libretro-desmume
+  -> libretro-picodrive
+  -> libretro-mesen-s
+  -> dolphin-emu
+  -> flatpak
+  -> xdotool
+  -> xorg-xprop
+  -> xorg-xwininfo
+  -> xorg-xdpyinfo
+  -> wireplumber
+  -> legendary
+  -> ttf-dejavu
+  -> innoextract
+  -> mesa-utils
+  -> yq
+==> ERROR: Could not resolve all dependencies.
